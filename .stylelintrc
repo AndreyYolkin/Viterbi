@@ -1,0 +1,8 @@
+{
+  "plugins": ["stylelint-prettier"],
+  "extends": ["stylelint-config-property-sort-order-smacss"],
+  "ignoreFiles": ["dist/*.*"],
+  "rules": {
+    "prettier/prettier": true
+  }
+}

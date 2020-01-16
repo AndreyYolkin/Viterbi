@@ -1,0 +1,64 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Viterbi
+body
+  .navbar.navbar-light.bg-light
+    .navbar-brand N3349 Ёлкин
+    a.navbar-link(href="javascript:alert('Пока не готово')") Также попробуйте Рида-Соломона!
+  .alertplace
+  .container
+    .row.flex-xl-nowrap
+      main.col-12.bd-content
+        h1.bd-title Несистематический кодер/декодер по алгоритму Витерби
+        form
+          .form-group
+            label(for='viterbiPolynoms') Образующие полиномы
+            input#viterbiPolynoms.form-control(type='text' aria-describedby='poly' placeholder='Полиномы')
+            small#poly.form-text.text-muted Введите полиномы в виде двоичных чисел, разделённых пробелами.
+              br
+              |Например, 1 + x + x^3 записывается как 1101, а 1 + x^2 + x^3 - как 1011
+          .form-group
+            label(for='viterbiConstraints') Ограничение
+            input#viterbiConstraints.form-control(type='text' placeholder='Сколько автомат будет хранить значений')
+          .form-group
+            label(for='viterbiInput') Сообщение
+            input#viterbiInput.form-control(type='text' placeholder='Сообщение')
+          .form-group
+            input#viterbiToggle.form-check-input(type='checkbox' data-on="Кодировать" data-off="Декодировать" data-onstyle="outline-info" data-offstyle="info")
+            script(src="./node_modules/bootstrap4-toggle/js/bootstrap4-toggle.min.js")
+          button#calc.btn.btn-primary(type='submit') Рассчитать
+          button#test.btn.btn-primary(type='submit') Тестирование
+
+#Test.modal.fade(tabindex='-1' role='dialog' aria-labelledby='TestLabel' aria-hidden='true')
+  .modal-dialog.modal-dialog-scrollable(role='document')
+    .modal-content
+      .modal-header
+        h5#TestLabel.modal-title Итог тестирования
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        #testresult
+          canvas(width=400 height=300)
+      .modal-footer
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Закрыть
+
+#Modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='ModalLabel' aria-hidden='true')
+  .modal-dialog.modal-dialog-scrollable(role='document')
+    .modal-content
+      .modal-header
+        h5#ModalLabel.modal-title Результат
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        h4 Входная строка
+        p.inputValue
+        h4.outputCaption
+        p.outputValue
+        #auto
+        #grid
+      .modal-footer
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Закрыть
+        button.topdf.btn.btn-primary(type='button') Скачать решётку

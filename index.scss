@@ -1,0 +1,31 @@
+@import "./node_modules/bootstrap4-toggle/css/bootstrap4-toggle.min.css";
+body {
+  margin: 0;
+  * {
+    box-sizing: border-box;
+  }
+  .bd-title {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+  }
+  form,
+  #cy {
+    margin-top: 2rem;
+  }
+  .alertplace {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+  }
+  #auto,
+  #grid {
+    height: 300px;
+    margin-bottom: 2rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  #Modal p {
+    word-break: break-all;
+  }
+}
