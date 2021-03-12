@@ -49,6 +49,6 @@
     "@guildofweavers/galois": "^0.4.22",
     "bootstrap4-toggle": "^3.6.1",
     "chart.js": "^2.9.3",
-    "jspdf": "^1.5.3"
+    "jspdf": "^2.3.1"
   }
 }
