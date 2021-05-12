@@ -48,7 +48,7 @@
     "@babel/register": "^7.9.0",
     "@guildofweavers/galois": "^0.4.22",
     "bootstrap4-toggle": "^3.6.1",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "jspdf": "^2.3.1"
   }
 }
