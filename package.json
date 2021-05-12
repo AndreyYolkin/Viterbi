@@ -29,7 +29,7 @@
     "mini-css-extract-plugin": "^0.8.2",
     "mocha": "^6.2.2",
     "popper.js": "^1.16.1",
-    "postcss": "^7.0.27",
+    "postcss": "^8.2.10",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.19.1",
     "pug": "^3.0.1",
