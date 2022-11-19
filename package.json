@@ -24,7 +24,7 @@
     "cssnano": "^4.1.10",
     "cytoscape": "^3.14.1",
     "cytoscape-avsdf": "^1.0.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "jquery": "^3.4.1",
     "mini-css-extract-plugin": "^0.8.2",
     "mocha": "^6.2.2",
@@ -41,7 +41,7 @@
     "stylelint-config-property-sort-order-smacss": "^5.3.0",
     "stylelint-prettier": "^1.1.2",
     "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
